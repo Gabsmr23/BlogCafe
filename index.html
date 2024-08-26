@@ -5,10 +5,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>BlogDeCafé</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
+        
+        <!-- Prefetch -->
 
+        <link rel="prefetch" href="cursos.html" as="document">
+
+        <!-- Preload -->
+        <link href="preload" href="css/normalize.css" as="style">
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" 
+        crossorigin="crossorigin" as="font">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        
+        <link href="preload" href="css/style.css" as="style">
+        <link rel="stylesheet" href="css/style.css">
 
     </head>
     <body>
@@ -42,7 +53,11 @@
 
                 <article class="entrada">
                     <div class="entrada_imagen">
-                        <img src="img/blog1.jpg" alt="imagen blog">
+                        <picture>
+                            <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                            <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+                        </picture>
+
                     </div>
 
                     <div class="entrada_contenido">
@@ -54,7 +69,10 @@
 
                 <article class="entrada">
                     <div class="entrada_imagen">
-                        <img src="img/blog2.jpg" alt="imagen blog">
+                    <picture>
+                            <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                            <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+                        </picture>
                     </div>
 
                     <div class="entrada_contenido">
@@ -66,7 +84,10 @@
 
                 <article class="entrada">
                     <div class="entrada_imagen">
-                        <img src="img/blog3.jpg" alt="imagen blog">
+                    <picture>
+                            <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                            <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+                        </picture>
                     </div>
 
                     <div class="entrada_contenido">

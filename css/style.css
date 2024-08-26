@@ -245,11 +245,12 @@ img {
 .campo {
     display: flex;
     margin-bottom: 2rem;
-    gap: 32px;
+    gap: 2px;
 }
 .campo_label {
     flex: 0 0 9rem;
     text-align: right;
+    padding-right: 2rem;
 }
 .campo_field {
     flex: 1;
